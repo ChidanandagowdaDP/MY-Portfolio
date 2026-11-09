@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Chidanandagowda D P">
+  <rect width="64" height="64" rx="14" fill="#0f0f1a" />
+  <text
+    x="29"
+    y="46"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="42"
+    font-style="italic"
+    fill="#ffffff"
+    text-anchor="middle"
+  >C</text>
+  <circle cx="47" cy="42" r="4.5" fill="#e94560" />
+</svg>
