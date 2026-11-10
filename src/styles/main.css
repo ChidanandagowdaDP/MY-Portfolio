@@ -208,7 +208,7 @@ img {
 
 @media (max-width: 768px) {
   .hero-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
     text-align: center;
   }
@@ -394,7 +394,7 @@ img {
 
 @media (max-width: 768px) {
   .about-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 }
@@ -656,6 +656,7 @@ img {
   border-radius: var(--radius-md);
   padding: 22px 24px;
   flex: 1;
+  min-width: 0;
 }
 
 .exp-header {
@@ -696,7 +697,7 @@ img {
 /* Contact */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
   gap: 60px;
   align-items: start;
   margin-top: 48px;
@@ -704,7 +705,7 @@ img {
 
 @media (max-width: 768px) {
   .contact-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 36px;
   }
 }
@@ -735,6 +736,12 @@ img {
   border-radius: var(--radius-md);
   border: 1px solid var(--clr-border);
   transition: all 0.2s;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.contact-link > div {
+  min-width: 0;
 }
 
 .contact-link:hover {
@@ -765,13 +772,13 @@ img {
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 16px;
 }
 
 @media (max-width: 480px) {
   .form-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
